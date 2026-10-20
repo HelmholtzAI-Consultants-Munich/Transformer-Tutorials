@@ -12,7 +12,7 @@ The course will be fully online:
 
 [Zoom Link](https://zoom.us/j/96018375948?pwd=6YF1gAzSTp59U7ppNKDbx7UeoIutqZ.1)  
 
-Meeting-ID: 960 1837 5948
+Meeting-ID: 960 1837 5948  
 Kenncode: 080515
 
 ## Schedule at a glance
