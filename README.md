@@ -1,115 +1,70 @@
-<div align="center">
-	
-# Tutorials for Transformer Models
+# Introduction to Explainable AI
 
-[![test](https://github.com/HelmholtzAI-Consultants-Munich/Transformer-Tutorials/actions/workflows/test_notebooks.yml/badge.svg)](https://github.com/HelmholtzAI-Consultants-Munich/Transformer-Tutorials/actions/workflows/test_notebooks.yml)
-[![stars](https://img.shields.io/github/stars/HelmholtzAI-Consultants-Munich/Transformer-Tutorials?logo=GitHub&color=yellow)](https://github.com/HelmholtzAI-Consultants-Munich/Transformer-Tutorials/stargazers)
-	
-</div>
+This half-day course provides an introduction to Explainable AI (XAI) for transformer models in natural language processing (NLP). The course focuses on text classification and uses DistilBERT as a running example to introduce explainability methods ranging from attention-based visualizations to architecture-aware attribution techniques. While the practical sessions focus on text-based transformers, many of the explainability principles discussed in the course are relevant to other transformer architectures and applications. The course combines alternating theoretical sessions and hands-on exercises. 
 
-<!-- LINK INTRODUCTION START -->
+The course aims to provide participants with a practical understanding of explainability methods for transformer-based models. After a brief introduction to the transformer architecture, participants will explore both model-agnostic and transformer-specific explainability techniques. Starting from attention-based visualizations (raw attention, attention rollout, and attention flow), the course discusses why attention alone is not sufficient as an explanation. It then introduces additional attribution methods, including gradient-based approaches, SHAP, and architecture-aware techniques such as Layer-wise Relevance Propagation (LRP). Throughout the course, participants will learn how to critically evaluate explanations, understand the assumptions underlying different methods, and recognize their strengths and limitations in practice.
 
-This repository contains a collection of interactive tutorials for understanding, fine-tuning, and explaining Transformer models. The tutorials introduce the fundamental concepts behind Transformers and provide hands-on experience in adapting pretrained models to specific tasks and interpreting their predictions. Each tutorial is provided as a Jupyter Notebook combining theoretical explanations with practical exercises.
 
-The tutorials cover Transformer architectures, fine-tuning techniques, and eXplainable Artificial Intelligence (XAI) methods for Transformers, including attention visualization and SHAP.
+[Course Page](https://www.helmholtz-hida.de/en/discover-hida/helmholtz-information-data-science-framework/data-science-course-portfolio/introduction-to-explainable-ai-for-transformers/)
 
-The learning objectives are:
+## Venue
+The course will be fully online:  
 
-* understand the fundamental concepts and architecture of Transformer models
-* learn how to fine-tune pretrained Transformers for specific tasks
-* understand the importance of interpretability and explainability in Transformer-based models
-* learn how different XAI methods for Transformers work and when to use them
-* gain hands-on experience fine-tuning Transformers and interpreting their predictions
+[Zoom Link](https://zoom.us/j/96018375948?pwd=6YF1gAzSTp59U7ppNKDbx7UeoIutqZ.1)  
 
-<!-- LINK INTRODUCTION END -->
+Meeting-ID: 960 1837 5948
+Kenncode: 080515
 
-## 📚 Included Tutorials
+## Schedule at a glance
 
-The repository includes tutorials covering **Transformer fundamentals**, **fine-tuning**, and **eXplainable Artificial Intelligence (XAI)** methods for Transformer-based models. The tutorials combine theoretical concepts with practical hands-on exercises.
+#### Day 1 - XAI for Transformers
 
-### Transformer Fundamentals
+|    Time     |       Session       |
+|-------------|---------------------|
+|xx:xx - xx:xx| xxx |
+|xx:xx - xx:xx|	xxx|
+|xx:xx - xx:xx| xxx |
+|12:00 - 13:00| Lunch Break|
+|xx:xx - xx:xx| xxx |
+|xx:xx - xx:xx| xxx|
+|xx:xx - xx:xx|	xxx |
 
-Introduction to the key concepts and components of Transformer architectures:
+## Mentors
 
-* Tokenization and embeddings
-* Self-attention and multi-head attention
-* Positional encoding
-* Encoder and decoder architectures
+- **TBD**
 
-### Fine-tuning Transformers
+## Requirements and Setup
 
-Hands-on tutorials on adapting pretrained Transformer models to specific tasks:
+This course assumes you have minimal experience running Python and Machine Learning Frameworks like PyTorch and sklearn.
 
-* Loading and using pretrained models
-* Preparing datasets for fine-tuning
-* Fine-tuning Transformers for downstream tasks
-* Evaluating model performance
+It is possible to either create an environment and install all the necessary packages locally (using the requirements.txt file) or to execute the notebooks on the browser, by clicking the 'Open in Colab' button. This second option doesn't require any further installation, but the user must have access to a Google account.
 
-### Explainability for Transformers
-
-Methods for understanding and interpreting the predictions of Transformer-based models:
-
-* Attention Maps, Flow and Rollout 
-* SHapley Additive exPlanations (SHAP) for text
-* Layer-wise Relevance Propagation
-* Interpretation and limitations of explanation methods
-
-## 🚀 Requirements and Setup
-
-The notebooks can either be executed locally or directly in the browser using the **Open in Colab** button. Running the notebooks in Colab does not require any installation, but a Google account is needed.
-
-To run the notebooks locally, create a virtual environment and install the required packages:
-
-```bash id="m4c6p2"
+If you prefer to run the notebooks on your device, create a virtual environment using the requirements.txt files:
+```
 conda create -n xai python=3.13
 conda activate xai
-
 pip install -r requirements_xai-for-transformer.txt
 ```
 
-Clone the repository:
+Once your environment is created, clone `2026-HIDA-Autumn` brach branch of the repo using the following command:
 
-```bash id="k9x2tw"
-git clone https://github.com/HelmholtzAI-Consultants-Munich/XAI-Tutorials.git
+```
+git clone --depth 1 --branch 2026-HIDA-Autumn https://github.com/HelmholtzAI-Consultants-Munich/XAI-Tutorials.git
 ```
 
-## 🎓 Using This Repository for Courses
+## Code of Conduct
 
-This repository can easily be adapted for online or in-person teaching.
-For course-specific material, we recommend creating a dedicated GitHub branch:
+Participants are expected to follow our code of conduct. In order to have a nice and collaborative environment, please follow these rules:
 
-```bash id="v8k3pm"
-git checkout -b <course-name>
-```
+- respect the others
+- turn camera on (if possible)
+- mic turned off unless you want to speak/ask questions
+- raise your hand to ask question or type them in the chat.
 
-You can then customize the notebooks and select only the material relevant for your course.
+If you have any issues that you don’t want to share, send a private message to one of the mentors.
 
-The folders `.github` and `docs` are only required for maintaining the main repository and can optionally be removed in course branches.
+## Contributions
 
-To automatically update notebook links and branch references, first set the `NEW_BRANCH` variable inside `update_branch_links.py` to the name of your course branch, then run:
+Comments and input are very welcome! If you have a suggestion or think something should be changed, please open an issue, submit a pull request or send an email to [Lisa Barros de Andrade e Sousa](mailto:lisa.barros@helmholtz-munich.de) or [Donatella Cea](mailto:donatella.cea@helmholtz-munich.de).
 
-```bash id="q1m7dx"
-python update_branch_links.py
-```
-
-## 🤝 Contributions
-
-<!-- LINK CONTRIBUTION START -->
-
-Comments, suggestions, and contributions are very welcome!
-If you have ideas for improvements or want to report an issue, feel free to open an issue or submit a pull request. We will review your contribution as soon as possible.
-
-<!-- LINK CONTRIBUTION END -->
-
-## 🛡️ License
-
-<!-- LINK LICENSE START -->
-
-This repository contains both source code and teaching materials, which are licensed separately:
-
-- **Code** (notebooks, scripts, and other software) is licensed under the MIT License. See the `LICENSE` file.
-- **Teaching materials** (slides, figures, and written explanations) are licensed under the Creative Commons Attribution 4.0 License. See the `LICENSE-CONTENT` file.
-
-[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
-
-<!-- LINK LICENSE END -->
+All content is publicly available under the Creative Commons Attribution License: https://creativecommons.org/licenses/by/4.0/
