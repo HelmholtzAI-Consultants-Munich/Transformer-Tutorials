@@ -1,5 +1,4 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/HelmholtzAI-Consultants-Munich/XAI-Tutorials/main/docs/source/_figures/logo.png" width="200">
 	
 # Tutorials for Transformer Models
 
