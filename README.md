@@ -1,4 +1,4 @@
-# Introduction to Explainable AI
+# Introduction to Explainable AI for Transformers
 
 This half-day course provides an introduction to Explainable AI (XAI) for transformer models in natural language processing (NLP). The course focuses on text classification and uses DistilBERT as a running example to introduce explainability methods ranging from attention-based visualizations to architecture-aware attribution techniques. While the practical sessions focus on text-based transformers, many of the explainability principles discussed in the course are relevant to other transformer architectures and applications. The course combines alternating theoretical sessions and hands-on exercises. 
 
