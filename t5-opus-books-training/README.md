@@ -62,7 +62,7 @@ sufficient memory.
 Run from this folder:
 
 ```bash
-python -m pip install -r ../../requirements_xai-for-transformer.txt
+python -m pip install -r ../requirements.txt
 python train_t5-small.py
 ```
 
