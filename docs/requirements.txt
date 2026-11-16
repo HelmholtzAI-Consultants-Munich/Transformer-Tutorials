@@ -1,0 +1,5 @@
+# requirements to build the documentation
+sphinx>=7,<9
+sphinx-book-theme>=1.1,<2
+myst-parser
+sphinxcontrib-youtube

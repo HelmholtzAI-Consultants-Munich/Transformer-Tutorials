@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Documentation
+docs/build/
+# Pages copied from XAI-Tutorials during the docs build
+docs/source/_shared/
+docs/source/_figures/shap_*.png
