@@ -58,20 +58,52 @@ Methods for understanding and interpreting the predictions of Transformer-based 
 
 The notebooks can either be executed locally or directly in the browser using the **Open in Colab** button. Running the notebooks in Colab does not require any installation, but a Google account is needed.
 
-To run the notebooks locally, create a virtual environment and install the required packages:
+To run the notebooks locally, we use [uv](https://docs.astral.sh/uv/) to set up Python and install the packages. If you don't have uv yet, install it (see the [uv installation guide](https://docs.astral.sh/uv/getting-started/installation/) for other options):
 
-```bash id="m4c6p2"
-conda create -n xai python=3.13
-conda activate xai
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-pip install -r requirements_xai-for-transformer.txt
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-Clone the repository:
+Then clone the repository:
 
-```bash id="k9x2tw"
-git clone https://github.com/HelmholtzAI-Consultants-Munich/XAI-Tutorials.git
+```bash
+git clone https://github.com/HelmholtzAI-Consultants-Munich/Transformer-Tutorials.git
+cd Transformer-Tutorials
 ```
+
+Create a virtual environment with **Python 3.13** (the same version as Google Colab). If Python 3.13 is not installed on your computer, uv downloads it for you:
+
+```bash
+uv venv --python 3.13
+```
+
+Activate the environment:
+
+```bash
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+```
+
+Install the requirements (one file for all notebooks):
+
+```bash
+uv pip install -r requirements.txt
+```
+
+Finally, start Jupyter from the activated environment and open the notebooks:
+
+```bash
+jupyter lab
+```
+
+The fine-tuning notebook (`2-Tutorial_Transformer_Finetuning.ipynb`) trains models and needs an NVIDIA GPU. We recommend running it in Colab with a GPU runtime (**Runtime → Change runtime type → T4 GPU**).
 
 ## 🎓 Using This Repository for Courses
 
