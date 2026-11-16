@@ -5,7 +5,7 @@ import re
 # CONFIGURATION
 REPO_PATH = "./"  # <- CHANGE THIS to the local path of your repo
 OLD_BRANCH = "main"  # <- Branch currently in the links
-NEW_BRANCH = "2025-HIDA-Spring"  # <- Branch you want to replace it with
+NEW_BRANCH = "2026-HIDA-Autumn"  # <- Branch you want to replace it with
 
 # Regular expressions
 COLAB_LINK_REGEX = re.compile(
@@ -65,6 +65,8 @@ def update_notebook(filepath):
 
 def main():
     for root, dirs, files in os.walk(REPO_PATH):
+        # Skip hidden folders such as .git and .ipynb_checkpoints
+        dirs[:] = [d for d in dirs if not d.startswith(".")]
         for file in files:
 
             if file.endswith(".ipynb"):
