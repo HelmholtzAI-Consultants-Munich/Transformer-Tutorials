@@ -228,3 +228,6 @@ docs/source/_figures/shap_*.png
 # Data and weights downloaded by the notebooks
 data/distilbert-emotion/
 data/*.zip
+# Checkpoints written by the training sections of the first tutorial
+distilbert-emotion/
+t5-english-to-german/
