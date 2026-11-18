@@ -182,7 +182,7 @@ Attention weights also often showed weak agreement with gradient-based and leave
 while attention over the simple average encoder agreed more closely with these measures.
 
 Together, these findings challenge the interpretation of high attention weights as evidence that particular tokens caused a model's prediction.
-Attention maps may be useful to inspect, but they should not be treated on their own as faithful explanations of model behaviour.
+Attention maps may be useful to inspect, but they should not be treated on their own as faithful explanations of model behavior.
 
 
 References
