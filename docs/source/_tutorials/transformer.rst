@@ -549,7 +549,7 @@ BERT paper: Devlin, J., Chang, M.W., Lee, K. and Toutanova, K., 2019, June. Bert
 
 https://towardsdatascience.com/an-intuitive-explanation-of-self-attention-4f72709638e1
 
-https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a
+https://medium.com/data-science/illustrated-self-attention-2d627e33b20a
 
 https://ai.stackexchange.com/questions/23889/what-is-the-purpose-of-decoder-mask-triangular-mask-in-transformer
 

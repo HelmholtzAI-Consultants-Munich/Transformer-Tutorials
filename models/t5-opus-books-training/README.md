@@ -5,7 +5,7 @@ translation**, complementing the optional translation section of the
 Transformer tutorial.
 
 Previously published weights are available as a GitHub Release asset:
-[`t5_small_weights.zip`](https://github.com/HelmholtzAI-Consultants-Munich/XAI-Tutorials/releases/download/v1.0.0/t5_small_weights.zip)
+[`t5_small_weights.zip`](https://github.com/HelmholtzAI-Consultants-Munich/Transformer-Tutorials/releases/download/v1.0.0/t5_small_weights.zip)
 (~671 MB). The weights are not stored in this folder.
 
 ## What's here
@@ -62,7 +62,7 @@ sufficient memory.
 Run from this folder:
 
 ```bash
-python -m pip install -r ../requirements.txt
+python -m pip install -r ../../requirements.txt
 python train_t5-small.py
 ```
 
@@ -75,7 +75,7 @@ All output paths are relative to the directory from which the script is run.
 ## Using the published weights
 
 Download and extract
-[`t5_small_weights.zip`](https://github.com/HelmholtzAI-Consultants-Munich/XAI-Tutorials/releases/download/v1.0.0/t5_small_weights.zip).
+[`t5_small_weights.zip`](https://github.com/HelmholtzAI-Consultants-Munich/Transformer-Tutorials/releases/download/v1.0.0/t5_small_weights.zip).
 
 Locate the checkpoint folder containing the model configuration and weights,
 then load it with:

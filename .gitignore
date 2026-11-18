@@ -231,3 +231,6 @@ data/*.zip
 # Checkpoints written by the training sections of the first tutorial
 distilbert-emotion/
 t5-english-to-german/
+# Outputs of the training scripts in models/
+_trainer_out/
+t5-small-english-german/
